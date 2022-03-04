@@ -6,7 +6,7 @@ function display(studentData)
 {
     document.getElementById("table").value="";
 
-    studentData.map(function(el,index,arr){
+    studentData.map(function(el){
 
         var tr=document.createElement("tr");
 
