@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        #form{
+            display: flex;
+            margin: center;
+            margin-top: 100px;
+            justify-content: center;
+            
+           
+        }
+        #container{
+            /* border: 1px solid red; */
+            width: 500px;
+
+          
+            background-color: aqua;
+            font-size: 20px;
+            
+            justify-content: center;
+        }
+        #container>input:last-child{
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <div id="container">
+            <p>Student Name</p>
+            <input type="text" id="name" placeholder="Name">
+            <p>mob.Number</p>
+            <input type="number" id="number" placeholder="Mob. Number">
+            <p>city</p>
+            <input type="text" id="city" placeholder="city">
+             <input type="submit" value="submit" id="submit">
+        </div>
+
+    </form>
+</body>
+<script src="./student.js"></script>
+</html>

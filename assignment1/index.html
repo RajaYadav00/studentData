@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function skillFromOther(l1,l2){
+        console.log(`I am ${this.name}  ${this.skill} and have skills of ${l1} and ${l2}`)
+    }
+    let obj1={
+        name: "Amar",
+        city: "Goa",
+        skill: "Singer"
+        
+        
+    }
+    let obj2={
+        name:"Akbar",
+        skill:"chef",
+        city:"Mumbai"
+    }
+    let obj3={
+        name:"Anthony",
+        skill:"Magician",
+        city:"Kasmir"
+    }
+skillFromOther.call(obj3,obj1.skill,obj2.skill)
+skillFromOther.apply(obj2,[obj1.skill,obj3.skill])
+let x=skillFromOther.bind(obj2,obj1.skill,obj3.skill)
+
+x();
+ 
+
+</script>
