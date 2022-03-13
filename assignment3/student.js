@@ -23,6 +23,6 @@ function studentData(event)
     localStorage.setItem("studentData",JSON.stringify(studentarr))
     console.log(stData)
 
-    window.location.href="../assignment2/index.html"
+    window.location.href="./display.html"
 }
  
